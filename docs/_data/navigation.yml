@@ -1,0 +1,7 @@
+main:
+  - title: "About"
+    url: /about/
+
+sudoquest:
+  - title: "Part 0"
+    url: /gdd/default/
