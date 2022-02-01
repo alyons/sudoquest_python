@@ -1,75 +1,21 @@
 main:
-  - title: "v3"
-    url: /ffrpg3/
-  - title: "v3.5"
-    url: /ffrpg350/
+  - title: "Game Design"
+    url: /gdd/
   - title: "About"
     url: /about/
 
-ffrpg325:
-  - title: "Part 0"
-    children:
-      - title: "Prelude"
-        url: /ffrpg325/part0/prelude/
-      - title: "Introduction"
-        url: /ffrpg325/
-  - title: "Part 1 - Building Your Character"
-    children:
-      - title: Character Building Example
-        url: /ffrpg325/part1/character-building-example/
-      - title: Advantages and Disadvantages
-        url: /ffrpg325/part1/advantages-disadvantages/
-      - title: Character Advancement
-        url: /ffrpg325/part1/character-advancement/
-      - title: Races
-        url: /ffrpg325/part1/races/
-      - title: Jobs
-        url: /ffrpg325/part1/jobs/
-      - title: Skills
-        url: /ffrpg325/part1/skills/
-      - title: Equipment
-        url: /ffrpg325/part1/equipment/
-      - title: Advantages and Disadvantages
-        url: /ffrpg325/part1/advantages-disadvantages/
-  - title: "Part 2 - Playing the Game"
-    children:
-      - title: Adventuring
-        url: /ffrpg325/part2/adventuring/
-      - title: Combat
-        url: /ffrpg325/part2/combat/
-  - title: "Part 3 - Magic"
-    children:
-      - title: Magic
-        url: /ffrpg325/part3/magic/
-      - title: Black Magic Spell List
-        url: /ffrpg325/part3/magic/black/
-      - title: White Magic Spell List
-        url: /ffrpg325/part3/magic/white/
-      - title: Time Magic
-        url: /ffrpg325/part3/magic/time/
-      - title: Blue Magic
-        url: /ffrpg325/part3/magic/blue/
-      - title: Spellblade Magic
-        url: /ffrpg325/part3/magic/spellblade/
-      - title: Intuitive Magic Rules
-        url: /ffrpg325/part3/magic/intuitive/
-  - title: "Appendicies"
-    children:
-      - title: Statuses
-        url: /ffrpg325/appendicies/statuses/
-      - title: Monster Creation System
-        url: /ffrpg325/appendicies/monster-creation-system/
-      - title: Glossary
-        url: /ffrpg325/appendicies/glossary/
+# ffrpg350:
+#   - title: "Part 0"
+#     children:
+#       - title: "Prelude"
+#         url: /ffrpg350/part0/prelude/
+#       - title: "Introduction"
+#         url: /ffrpg350/
+#   - title: "Part 1 - Building Your Character"
+#     children:
+#     - title: "Classes and Jobs"
+#       url: /ffrpg350/part1/classes-jobs/
 
-ffrpg350:
+sudoquest:
   - title: "Part 0"
-    children:
-      - title: "Prelude"
-        url: /ffrpg350/part0/prelude/
-      - title: "Introduction"
-        url: /ffrpg350/
-  - title: "Part 1 - Building Your Character"
-    children:
-    - title: "Classes and Jobs"
-      url: /ffrpg350/part1/classes-jobs/
+    url: /gdd/default/
