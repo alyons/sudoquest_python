@@ -17,5 +17,21 @@ main:
 #       url: /ffrpg350/part1/classes-jobs/
 
 sudoquest:
-  - title: "Part 0"
-    url: /gdd/default/
+  - title: "Artificial Intelligence"
+    url: /gdd/ai/
+  - title: "Gameplay"
+    url: /gdd/gameplay/
+  - title: "Glossary"
+    url: /gdd/glossary/
+  - title: "Interface"
+    url: /gdd/interface/
+  - title: "Levels"
+    url: /gdd/levels/
+  - title: "Mechanics"
+    url: /gdd/mechanics/
+  - title: "Raw Notes"
+    url: /gdd/raw-notes/
+  - title: "Story+"
+    url: /gdd/story/
+  - title: "Technical"
+    url: /gdd/technical/
