@@ -13,6 +13,7 @@ We should look at difficulty and try and touch stuff that will help the players.
 
 - Auto-Show Note Numbers - Will automatically show note or small numbers in the boxes on the grid.
 - Auto Solver - Select a square and the number will appear
+- Smaller Sudoku Puzzles
 
 ### More Difficult
 
