@@ -4,34 +4,29 @@ main:
   - title: "About"
     url: /about/
 
-# ffrpg350:
-#   - title: "Part 0"
-#     children:
-#       - title: "Prelude"
-#         url: /ffrpg350/part0/prelude/
-#       - title: "Introduction"
-#         url: /ffrpg350/
-#   - title: "Part 1 - Building Your Character"
-#     children:
-#     - title: "Classes and Jobs"
-#       url: /ffrpg350/part1/classes-jobs/
-
 sudoquest:
-  - title: "Artificial Intelligence"
-    url: /gdd/ai/
+  - titile: "Overview"
+    url: /gdd/
   - title: "Gameplay"
     url: /gdd/gameplay/
-  - title: "Glossary"
-    url: /gdd/glossary/
   - title: "Interface"
     url: /gdd/interface/
-  - title: "Levels"
-    url: /gdd/levels/
   - title: "Mechanics"
     url: /gdd/mechanics/
-  - title: "Raw Notes"
-    url: /gdd/raw-notes/
+    children:
+      - title: "Battle"
+        url: /gdd/mechanics/battle/
+  - title: "Character"
+    url: /gdd/character/
+  - title: "Artificial Intelligence"
+    url: /gdd/ai/
   - title: "Story+"
     url: /gdd/story/
   - title: "Technical"
     url: /gdd/technical/
+  - title: "Raw Notes"
+    url: /gdd/raw-notes/
+  - title: "Glossary"
+    url: /gdd/glossary/
+
+# Sidebar Navigation only goes one level deep

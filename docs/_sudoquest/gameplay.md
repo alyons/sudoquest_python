@@ -7,7 +7,25 @@ title: "Gameplay"
 
 ### Game Progression
 
-How does the player play the game, could be a flow chart… an epic flow chart.
+A player's goal in the main campaign is to discover more of the map, and unlock new enemies to fight to gain more experience.
+
+1. The player will determine an objective to strive for:
+  a. A quest will direct the player somewhere
+  b. A rumor will direct the player somewhere
+  c. The player may want to explore and open up the map
+2. The player will travel to the objective:
+  a. The player may meet challenges on the way to the objective: have X amount of skill, have some item, have completed some other objective.
+  b. The player may meet companions on the way to the objective: will join your cause and might expand your powers or game modes.
+  c. The player may meet with enemies on the way to the objective: will have to be beaten via contest.
+3. The player will reach the objective:
+  a. The player may have to complete X number of combats.
+  b. The player may simply have to reach the objective, where the challenge is in getting there
+  c. The player may need an item or companion to reach the objective.
+4. The player obtains the objective:
+  a. Quest Item
+  b. Equipment/Treasure
+  c. Companion
+  d. ???
 
 ### Quest Structure
 

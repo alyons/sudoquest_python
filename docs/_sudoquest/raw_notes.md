@@ -3,6 +3,10 @@ permalink: /gdd/raw-notes/
 title: "Raw Notes"
 ---
 
+## Sudoku
+
+- [Sudoku Techniques](https://www.conceptispuzzles.com/index.aspx?uri=puzzle/sudoku/techniques)
+
 ## Puzzle Quest
 
 - A character has 7 Attributes: Fire, Earth, Water, Wind, Battle, Cunning, Morale
@@ -18,5 +22,19 @@ title: "Raw Notes"
     - Highest cunning goes first
   - Morale
     - Increases Exp from matches
+- Keeps an in game calendar
+  - Does this gate certain events?
+  - Does this effect things other than enemy spawns?
 
 ### What effects exist in this game
+
+- Generate mana when dealing damage
+- Generate mana when taking damage
+- Deplete mana when dealing damage
+- Deplete mana when taking damage
+- Siphon mana when taking damage
+- Siphon mana when dealing damage
+
+## Other
+
+- Do we want mana burn? (Mana overflow has some negative effect)
