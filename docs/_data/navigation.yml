@@ -16,16 +16,28 @@ sudoquest:
     children:
       - title: "Battle"
         url: /gdd/mechanics/battle/
-  - title: "Character"
-    url: /gdd/character/
-  - title: "Artificial Intelligence"
-    url: /gdd/ai/
+      - title: "Character"
+        url: /gdd/mechanics/character/
+      - title: "Difficulty"
+        url: /gdd/mechanics/difficulty/
+      - title: "Map"
+        url: /gdd/mechanics/map/
+      - title: "Skills"
+        url: /gdd/mechanics/skills/
+  - title: "Enemies"
+    url: /gdd/enemies/
+    children:
+      - title: "Artificial Intelligence"
+        url: /gdd/enemies/ai/
   - title: "Story+"
     url: /gdd/story/
   - title: "Technical"
     url: /gdd/technical/
   - title: "Raw Notes"
     url: /gdd/raw-notes/
+    children:
+      - title: "Puzzle Quest"
+        url: /gdd/raw-notes/puzzle-quest/
   - title: "Glossary"
     url: /gdd/glossary/
 

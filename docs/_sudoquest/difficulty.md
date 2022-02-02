@@ -1,5 +1,5 @@
 ---
-permalink: /gdd/difficulty/
+permalink: /gdd/mechanics/difficulty/
 title: Difficulty
 ---
 

@@ -1,5 +1,5 @@
 ---
-permalink: /gdd/ai/
+permalink: /gdd/enemies/ai/
 title: "Artificial Intelligence"
 ---
 
