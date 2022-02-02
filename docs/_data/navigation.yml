@@ -33,6 +33,12 @@ sudoquest:
     url: /gdd/story/
   - title: "Technical"
     url: /gdd/technical/
+  - title: "Development Planning"
+    children:
+      - title: "Features"
+        url: /gdd/dev-plan/features/
+      - title: "Versions"
+        url: /gdd/dev-plan/versions/
   - title: "Raw Notes"
     url: /gdd/raw-notes/
     children:
