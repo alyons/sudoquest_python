@@ -27,8 +27,10 @@ sudoquest:
   - title: "Enemies"
     url: /gdd/enemies/
     children:
-      - title: "Artificial Intelligence"
-        url: /gdd/enemies/ai/
+      - title: "Battle AI"
+        url: /gdd/enemies/bai/
+      - title: "Sudoku AI"
+        url: /gdd/enemies/sai/
   - title: "Story+"
     url: /gdd/story/
   - title: "Technical"
