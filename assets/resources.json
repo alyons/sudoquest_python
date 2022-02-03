@@ -1,0 +1,12 @@
+{
+  "images": [{
+    "id": "sudoku_tile",
+    "path_parts": ["images", "sudoku_tile.png"]
+  }],
+  "fonts": [{
+    "id": "default",
+    "path_parts": ["fonts", "PressStart2P-vaV7.ttf"],
+    "size": 16
+  }],
+  "sounds": []
+}
