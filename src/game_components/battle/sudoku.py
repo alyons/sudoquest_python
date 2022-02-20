@@ -1,4 +1,5 @@
 SudokuData = dict[tuple[int, int], int]
+NUMBERS = range(1, 10)
 
 # Helper Methods
 
@@ -69,6 +70,25 @@ def solve_recursive(puzzle: SudokuData, row: int, col: int) -> None:
         puzzle[(col, row)] = 0
 
 
+def square_solved(puzzle: SudokuData, row: int, col: int) -> bool:
+    return puzzle[(col, row)] != 0
+
+
+def get_candidates(puzzle: SudokuData, row: int, col: int) -> set[int]:
+    candidates = set()
+
+    # Return empty set for solved squares
+    if square_solved(puzzle, row, col):
+        return candidates
+    
+    for n in NUMBERS:
+        if (not row_contains_value(puzzle, row, col, n) and
+            not col_contains_value(puzzle, row, col, n) and
+            not box_contains_value(puzzle, row, col, n)):
+            candidates.add(n)
+
+    return candidates
+
 # def solve_square(row: int, col: int) -> bool:
 #     return False
 
@@ -82,6 +102,7 @@ class Sudoku():
         self.base: str = puzzle
         self.squares_visible: SudokuData = {(i % 9, i // 9):int(v) for i, v in enumerate(self.base)}
         self.squares_solved: SudokuData = {(i % 9, i // 9):int(v) for i, v in enumerate(self.base)}
+        self.default_values: set[tuple[int, int]] = {(i % 9, i // 9) for i, v in enumerate(self.base) if not int(v) == 0}
         solve_recursive(self.squares_solved, 0, 0)
 
     def sudoku_solved(self: 'Sudoku') -> bool:

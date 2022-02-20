@@ -36,28 +36,27 @@ class Board():
         if not Board.TILE: Board.TILE = StaticResourceManager.get_image('sudoku_tile')
         self.surface: Surface = Surface((9 * Board.TILE.get_width(), 9 * Board.TILE.get_height()))
         self.selected_square: tuple[int, int] = None
-    
-    def draw_square(self: 'Board', pos: tuple[int, int], number: int) -> None:
-        self.surface.blit(Board.TILE, pos)
+        self.selector = Surface(Board.TILE.get_size())
+        self.selector.fill('yellow')
+        self.selector.fill((180, 180, 180), (4, 4, 24, 24))
+
+    def draw_tile(self: 'Board', pos: tuple[int, int], number: int) -> None:
+        draw_pos = (pos[0] * Board.TILE.get_width(), pos[1] * Board.TILE.get_height())
+        self.surface.blit(Board.TILE, draw_pos)
+        if self.selected_square == pos:
+            self.surface.blit(self.selector, draw_pos)
         if number > 0:
-            numImage = Board.FONT.render(f'{number}', True, (0, 0, 0))
+            numImage = Board.FONT.render(f'{number}', True, 'black' if pos in self.sudoku.default_values else'blue')
             numSize = numImage.get_size()
-            numPos = (pos[0] + ((Board.TILE.get_width() - numSize[0]) / 2) + 1, pos[1] + ((Board.TILE.get_height() - numSize[1]) / 2) + 1)
+            numPos = (draw_pos[0] + ((Board.TILE.get_width() - numSize[0]) / 2) + 1, draw_pos[1] + ((Board.TILE.get_height() - numSize[1]) / 2) + 1)
             self.surface.blit(numImage, numPos)
     
     def draw_board(self: 'Board') -> None:
         for k, v in self.sudoku.squares_visible.items():
-            pos = (k[0] * Board.TILE.get_width(), k[1] * Board.TILE.get_height())
-            self.draw_square(pos, v)
-    
-    def draw_selected_square(self: 'Board') -> None:
-        selector = Surface(Board.TILE.get_size())
-        selector.fill('yellow')
-        self.surface.blit(selector, (selector.get_width() * self.selected_square[0], selector.get_height() * self.selected_square[1]))
+            self.draw_tile(k, v)
     
     def draw(self: 'Board') -> None:
         self.draw_board()
-        if self.selected_square: self.draw_selected_square()
     
     def submit_number(self: 'Board', value: int) -> bool:
         output = self.sudoku.submit_number(self.selected_square[1], self.selected_square[0], value)

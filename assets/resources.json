@@ -7,6 +7,14 @@
     "id": "default",
     "path_parts": ["fonts", "PressStart2P-vaV7.ttf"],
     "size": 16
+  }, {
+    "id": "candidate",
+    "path_parts": ["fonts", "PressStart2P-vaV7.ttf"],
+    "size": 8
+  }, {
+    "id": "numbers",
+    "path_parts": ["fonts", "PressStart2P-vaV7.ttf"],
+    "size": 24
   }],
   "sounds": []
 }
